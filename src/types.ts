@@ -5,6 +5,9 @@ export interface FeishuConfig {
   cliPath: string;
   folderId: string;
   baseUrl: string;
+  wikiEnabled: boolean;
+  wikiSpaceId: string;
+  wikiParentToken: string;
 }
 
 export interface YuqueConfig {
@@ -26,7 +29,10 @@ export const DEFAULT_SETTINGS: PluginSettings = {
     enabled: false,
     cliPath: "lark-cli",
     folderId: "",
-    baseUrl: "https://feishu.cn",
+    baseUrl: "https://my.feishu.cn",
+    wikiEnabled: false,
+    wikiSpaceId: "my_library",
+    wikiParentToken: "",
   },
   yuque: {
     enabled: false,
